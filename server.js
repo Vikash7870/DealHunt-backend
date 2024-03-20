@@ -36,7 +36,7 @@ app.use("/api/v1/product", productRoutes);
 
 //rest api
 app.get("/", (req, res) => {
-    res.send("<h1>Welcome to Deals Hunt Server Portal</h1>");
+    res.send("<h1> Welcome to the Deals Hunt Server Portal, where great deals await! Explore, hunt, and seize incredible savings opportunities here </h1>");
   });
   
   //PORT
