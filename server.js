@@ -29,14 +29,13 @@ app.use(morgan("dev"));
 
 //routes
 app.use("/api/v1/auth", authRoutes);
-
 app.use("/api/v1/category", categoryRoutes);
 app.use("/api/v1/product", productRoutes);
 
 
 //rest api
 app.get("/", (req, res) => {
-    res.send("<h1> Welcome to the Deals Hunt Server Portal, where great deals await! Explore, hunt, and seize incredible savings opportunities here </h1>");
+    res.send("<h1> Welcome to the Deals Hunt Server Portal, where great deals await! Explore, hunt, and seize incredible savings opportunities here!</h1>");
   });
   
   //PORT
