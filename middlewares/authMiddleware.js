@@ -1,6 +1,6 @@
 import JWT from "jsonwebtoken";
 import userModel from "../models/userModel.js";
-
+import sallerModel from "../models/sallerModel.js";
 //Protected Routes token base
 export const requireSignIn = async (req, res, next) => {
     try {
@@ -39,3 +39,28 @@ export const isAdmin = async (req, res, next) => {
         })
     }
 }
+
+//seller access
+
+// export const isSeller = async (req, res, next) => {
+//     try {
+//         const seller = await sallerModel.findById(req.seller._id);
+//         if (seller.role !== 1) {
+//             return res.status(401).send({
+//                 success: false,
+//                 message: "UnAuthorized Access"
+//             });
+//         } else {
+//             {
+//                 next();
+//             }
+//         }
+//     } catch (error) {
+//         console.log(error);
+//         res.status(401).send({
+//             success: false,
+//             error,
+//             message: "Error in seller middelware"
+//         })
+//     }
+// }

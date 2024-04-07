@@ -14,6 +14,7 @@ router.post(
     formidable(),
     createProductController
   );
+  //Updaate product
   router.put(
     "/update-product/:pid",
     requireSignIn,
